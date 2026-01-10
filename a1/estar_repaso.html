@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>El verbo SER – repaso</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+
+<h1>El verbo SER – repaso</h1>
+<p class="jp-note">動詞「ser」復習シート</p>
+
+<h2>¿Para qué usamos SER?</h2>
+<p class="jp-note">動詞「ser」は、アイデンティティ・職業・国籍などの「変わりにくい情報」を表すときに使います。</p>
+
+<p>Usamos <strong>ser</strong> para hablar de:</p>
+<ul>
+  <li>identidad</li>
+  <li>profesión</li>
+  <li>nacionalidad</li>
+  <li>características estables</li>
+</ul>
+
+<h2>Conjugación básica</h2>
+<p class="jp-note">基本の活用と例文です。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Persona</th>
+      <th>Forma</th>
+      <th>Ejemplo</th>
+      <th>日本語</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Yo</td>
+      <td>soy</td>
+      <td>Yo soy estudiante.</td>
+      <td>私は学生です。</td>
+    </tr>
+    <tr>
+      <td>Tú</td>
+      <td>eres</td>
+      <td>Tú eres japonés.</td>
+      <td>君は日本人です。</td>
+    </tr>
+    <tr>
+      <td>Él / Ella</td>
+      <td>es</td>
+      <td>Ella es profesora.</td>
+      <td>彼女は先生です。</td>
+    </tr>
+    <tr>
+      <td>Usted</td>
+      <td>es</td>
+      <td>Usted es profesor.</td>
+      <td>あなたは先生です。（丁寧）</td>
+    </tr>
+    <tr>
+      <td>Nosotros / Nosotras</td>
+      <td>somos</td>
+      <td>Nosotras somos amigas.</td>
+      <td>私たちは友だちです。</td>
+    </tr>
+    <tr>
+      <td>Vosotros / Vosotras</td>
+      <td>sois</td>
+      <td>Vosotros sois estudiantes.</td>
+      <td>君たちは学生です。（主にスペイン）</td>
+    </tr>
+    <tr>
+      <td>Ellos / Ellas</td>
+      <td>son</td>
+      <td>Ellas son argentinas.</td>
+      <td>彼女たちはアルゼンチン人です。</td>
+    </tr>
+    <tr>
+      <td>Ustedes</td>
+      <td>son</td>
+      <td>Ustedes son estudiantes.</td>
+      <td>あなたがたは学生です。（複数・丁寧）</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="jp-note">※「vosotros / vosotras」は主にスペインで使われます。ラテンアメリカではほとんど使われません。</p>
+
+<h2>Frases modelo</h2>
+<p class="jp-note">例文と日本語訳です。</p>
+
+<p>
+  <strong>Mi nombre es Ana. Yo soy española.</strong><br>
+  <span class="toggle" onclick="toggle('jp-f1')">日本語を見る / 隠す</span>
+  <span id="jp-f1" class="hidden">私の名前はアナです。私はスペイン人です。</span>
+</p>
+
+<p>
+  <strong>Kenji es estudiante. Él es japonés.</strong><br>
+  <span class="toggle" onclick="toggle('jp-f2')">日本語を見る / 隠す</span>
+  <span id="jp-f2" class="hidden">ケンジは学生です。彼は日本人です。</span>
+</p>
+
+<h2>Ejercicios de repaso</h2>
+
+<div class="exercise-block">
+  <h3>1. Completa con la forma correcta de SER</h3>
+  <p class="jp-note">動詞「ser」の正しい形を入れましょう。</p>
+
+  <p>
+    a) Yo ______ profesor.  
+    <span class="toggle" onclick="toggle('r1')">Ver respuesta</span>
+    <span id="r1" class="hidden">Yo <strong>soy</strong> profesor。</span>
+  </p>
+
+  <p>
+    b) Ella ______ estudiante。  
+    <span class="toggle" onclick="toggle('r2')">Ver respuesta</span>
+    <span id="r2" class="hidden">Ella <strong>es</strong> estudiante。</span>
+  </p>
+
+  <p>
+    c) Nosotros ______ amigos。  
+    <span class="toggle" onclick="toggle('r3')">Ver respuesta</span>
+    <span id="r3" class="hidden">Nosotros <strong>somos</strong> amigos。</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Traduce al español</h3>
+  <p class="jp-note">スペイン語に訳しましょう。</p>
+
+  <p>
+    a) 私は日本人です。  
+    <span class="toggle" onclick="toggle('r4')">Ver respuesta</span>
+    <span id="r4" class="hidden">Yo soy japonés。/ Yo soy japonesa。</span>
+  </p>
+
+  <p>
+    b) 彼は先生です。  
+    <span class="toggle" onclick="toggle('r5')">Ver respuesta</span>
+    <span id="r5" class="hidden">Él es profesor。</span>
+  </p>
+</div>
+
+<h2>Mini‑quiz</h2>
+<p class="jp-note">正しいスペイン語の文を選びましょう。</p>
+
+<div class="exercise-block">
+  <h3>1) （意味：「私たちは学生です。」）</h3>
+
+  <p>
+    a) Nosotros somos estudiantes。<br>
+    b) Nosotros estamos estudiantes。<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">正解：a) Nosotros somos estudiantes。</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) （意味：「私は日本人です。」）</h3>
+
+  <p>
+    a) Yo eres japonés。<br>
+    b) Yo soy japonés。<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">正解：b) Yo soy japonés。</span>
+  </p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>La hora, los días y los meses – repaso</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+
+<h1>La hora, los días y los meses</h1>
+<p class="jp-note">時間・曜日・月の言い方</p>
+
+<!-- ========================= -->
+<!--        LA HORA            -->
+<!-- ========================= -->
+
+<h2>¿Qué hora es?</h2>
+<p class="jp-note">スペイン語の時間の言い方です。</p>
+
+<ul>
+  <li><strong>Es la una.</strong>（1時）</li>
+  <li><strong>Son las dos.</strong>（2時）</li>
+  <li><strong>Son las tres y media.</strong>（3時半）</li>
+  <li><strong>Son las cuatro y cuarto.</strong>（4時15分）</li>
+  <li><strong>Son las cinco menos cuarto.</strong>（5時15分前 → 4:45）</li>
+</ul>
+
+<h2>Fórmulas básicas</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Expresión</th>
+      <th>Ejemplo</th>
+      <th>日本語</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>en punto</td>
+      <td>Son las seis en punto.</td>
+      <td>6時ちょうど</td>
+    </tr>
+    <tr>
+      <td>y media</td>
+      <td>Son las siete y media.</td>
+      <td>7時半</td>
+    </tr>
+    <tr>
+      <td>y cuarto</td>
+      <td>Son las ocho y cuarto.</td>
+      <td>8時15分</td>
+    </tr>
+    <tr>
+      <td>menos cuarto</td>
+      <td>Son las nueve menos cuarto.</td>
+      <td>9時15分前（8:45）</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ========================= -->
+<!--      DÍAS DE LA SEMANA    -->
+<!-- ========================= -->
+
+<h2>Días de la semana</h2>
+<p class="jp-note">曜日（スペイン語は月曜日から始まります）</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Español</th>
+      <th>日本語</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>lunes</td><td>月曜日</td></tr>
+    <tr><td>martes</td><td>火曜日</td></tr>
+    <tr><td>miércoles</td><td>水曜日</td></tr>
+    <tr><td>jueves</td><td>木曜日</td></tr>
+    <tr><td>viernes</td><td>金曜日</td></tr>
+    <tr><td>sábado</td><td>土曜日</td></tr>
+    <tr><td>domingo</td><td>日曜日</td></tr>
+  </tbody>
+</table>
+
+<!-- ========================= -->
+<!--        MESES DEL AÑO      -->
+<!-- ========================= -->
+
+<h2>Meses del año</h2>
+<p class="jp-note">月（スペイン語では大文字にしません）</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Español</th>
+      <th>日本語</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>enero</td><td>1月</td></tr>
+    <tr><td>febrero</td><td>2月</td></tr>
+    <tr><td>marzo</td><td>3月</td></tr>
+    <tr><td>abril</td><td>4月</td></tr>
+    <tr><td>mayo</td><td>5月</td></tr>
+    <tr><td>junio</td><td>6月</td></tr>
+    <tr><td>julio</td><td>7月</td></tr>
+    <tr><td>agosto</td><td>8月</td></tr>
+    <tr><td>septiembre</td><td>9月</td></tr>
+    <tr><td>octubre</td><td>10月</td></tr>
+    <tr><td>noviembre</td><td>11月</td></tr>
+    <tr><td>diciembre</td><td>12月</td></tr>
+  </tbody>
+</table>
+
+<h2>Ejemplos con fechas</h2>
+<p class="jp-note">日付の言い方です。</p>
+
+<p>
+  <strong>Hoy es 5 de mayo.</strong><br>
+  <span class="toggle" onclick="toggle('jp-m1')">日本語を見る / 隠す</span>
+  <span id="jp-m1" class="hidden">今日は5月5日です。</span>
+</p>
+
+<p>
+  <strong>Mi cumpleaños es el 12 de octubre.</strong><br>
+  <span class="toggle" onclick="toggle('jp-m2')">日本語を見る / 隠す</span>
+  <span id="jp-m2" class="hidden">私の誕生日は10月12日です。</span>
+</p>
+
+<!-- ========================= -->
+<!--         EJEMPLOS          -->
+<!-- ========================= -->
+
+<h2>Ejemplos generales</h2>
+
+<p>
+  <strong>Son las tres y media.</strong><br>
+  <span class="toggle" onclick="toggle('jp-f1')">日本語を見る / 隠す</span>
+  <span id="jp-f1" class="hidden">3時半です。</span>
+</p>
+
+<p>
+  <strong>Hoy es martes.</strong><br>
+  <span class="toggle" onclick="toggle('jp-f2')">日本語を見る / 隠す</span>
+  <span id="jp-f2" class="hidden">今日は火曜日です。</span>
+</p>
+
+<p>
+  <strong>Mañana es domingo.</strong><br>
+  <span class="toggle" onclick="toggle('jp-f3')">日本語を見る / 隠す</span>
+  <span id="jp-f3" class="hidden">明日は日曜日です。</span>
+</p>
+
+<!-- ========================= -->
+<!--        EJERCICIOS         -->
+<!-- ========================= -->
+
+<h2>Ejercicios de repaso</h2>
+
+<div class="exercise-block">
+  <h3>1. Escribe la hora</h3>
+  <p class="jp-note">スペイン語で時間を書きましょう。</p>
+
+  <p>
+    a) 4:00  
+    <span class="toggle" onclick="toggle('r1')">Ver respuesta</span>
+    <span id="r1" class="hidden">Son las cuatro.</span>
+  </p>
+
+  <p>
+    b) 7:30  
+    <span class="toggle" onclick="toggle('r2')">Ver respuesta</span>
+    <span id="r2" class="hidden">Son las siete y media。</span>
+  </p>
+
+  <p>
+    c) 8:45  
+    <span class="toggle" onclick="toggle('r3')">Ver respuesta</span>
+    <span id="r3" class="hidden">Son las nueve menos cuarto。</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Traduce al español</h3>
+  <p class="jp-note">スペイン語に訳しましょう。</p>
+
+  <p>
+    a) 今日は金曜日です。  
+    <span class="toggle" onclick="toggle('r4')">Ver respuesta</span>
+    <span id="r4" class="hidden">Hoy es viernes。</span>
+  </p>
+
+  <p>
+    b) 明日は月曜日です。  
+    <span class="toggle" onclick="toggle('r5')">Ver respuesta</span>
+    <span id="r5" class="hidden">Mañana es lunes。</span>
+  </p>
+</div>
+
+<!-- ========================= -->
+<!--         MINI QUIZ         -->
+<!-- ========================= -->
+
+<h2>Mini‑quiz</h2>
+<p class="jp-note">正しい文を選びましょう。</p>
+
+<div class="exercise-block">
+  <h3>1) （意味：「今は6時です。」）</h3>
+
+  <p>
+    a) Son las seis.<br>
+    b) Es las seis.<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">正解：a) Son las seis。</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) （意味：「今日は水曜日です。」）</h3>
+
+  <p>
+    a) Hoy es miércoles.<br>
+    b) Hoy está miércoles.<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">正解：a) Hoy es miércoles。</span>
+  </p>
+</div>
+
+</body>
+</html>

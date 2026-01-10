@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ser vs Estar – comparación</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+
+<h1>Ser vs Estar</h1>
+<p class="jp-note">動詞「ser」と「estar」の使い分け</p>
+
+<h2>¿Cuál es la diferencia?</h2>
+<p class="jp-note">「ser」は本質・特徴、「estar」は状態・場所を表すことが多いです。</p>
+
+<p><strong>Ser</strong> se usa para características permanentes o identidad.</p>
+<p><strong>Estar</strong> se usa para estados temporales o ubicación.</p>
+
+<h2>Comparación general</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ser</th>
+      <th>Estar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Identidad</td>
+      <td>Estado físico o emocional</td>
+    </tr>
+    <tr>
+      <td>Profesión</td>
+      <td>Ubicación</td>
+    </tr>
+    <tr>
+      <td>Nacionalidad</td>
+      <td>Condiciones temporales</td>
+    </tr>
+    <tr>
+      <td>Características permanentes</td>
+      <td>Cambios de estado</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Ejemplos comparativos</h2>
+<p class="jp-note">例文と日本語訳です。</p>
+
+<p>
+  <strong>Él es profesor.</strong> (ser → profesión)<br>
+  <span class="toggle" onclick="toggle('jp-f1')">日本語を見る / 隠す</span>
+  <span id="jp-f1" class="hidden">彼は先生です。</span>
+</p>
+
+<p>
+  <strong>Él está cansado.</strong> (estar → estado)<br>
+  <span class="toggle" onclick="toggle('jp-f2')">日本語を見る / 隠す</span>
+  <span id="jp-f2" class="hidden">彼は疲れています。</span>
+</p>
+
+<p>
+  <strong>Madrid es grande.</strong> (ser → característica)<br>
+  <span class="toggle" onclick="toggle('jp-f3')">日本語を見る / 隠す</span>
+  <span id="jp-f3" class="hidden">マドリードは大きいです。</span>
+</p>
+
+<p>
+  <strong>Madrid está en España.</strong> (estar → ubicación)<br>
+  <span class="toggle" onclick="toggle('jp-f4')">日本語を見る / 隠す</span>
+  <span id="jp-f4" class="hidden">マドリードはスペインにあります。</span>
+</p>
+
+<h2>Casos especiales</h2>
+<p class="jp-note">意味が変わる場合があります。</p>
+
+<ul>
+  <li><strong>ser listo</strong> = 賢い</li>
+  <li><strong>estar listo</strong> = 準備ができている</li>
+  <li><strong>ser aburrido</strong> = 退屈な人</li>
+  <li><strong>estar aburrido</strong> = 退屈している</li>
+</ul>
+
+<h2>Ejercicios de repaso</h2>
+
+<div class="exercise-block">
+  <h3>1. Completa con SER o ESTAR</h3>
+  <p class="jp-note">「ser」か「estar」の正しい形を入れましょう。</p>
+
+  <p>
+    a) Yo ______ en casa ahora.  
+    <span class="toggle" onclick="toggle('r1')">Ver respuesta</span>
+    <span id="r1" class="hidden">estoy</span>
+  </p>
+
+  <p>
+    b) Ella ______ muy simpática.  
+    <span class="toggle" onclick="toggle('r2')">Ver respuesta</span>
+    <span id="r2" class="hidden">es</span>
+  </p>
+
+  <p>
+    c) Nosotros ______ estudiantes.  
+    <span class="toggle" onclick="toggle('r3')">Ver respuesta</span>
+    <span id="r3" class="hidden">somos</span>
+  </p>
+
+  <p>
+    d) Mi hermano ______ enfermo hoy.  
+    <span class="toggle" onclick="toggle('r4')">Ver respuesta</span>
+    <span id="r4" class="hidden">está</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Traduce al español</h3>
+  <p class="jp-note">スペイン語に訳しましょう。</p>
+
+  <p>
+    a) 彼女はスペイン人です。  
+    <span class="toggle" onclick="toggle('r5')">Ver respuesta</span>
+    <span id="r5" class="hidden">Ella es española.</span>
+  </p>
+
+  <p>
+    b) 私は今日はあまり元気ではありません。  
+    <span class="toggle" onclick="toggle('r6')">Ver respuesta</span>
+    <span id="r6" class="hidden">Hoy no estoy muy bien.</span>
+  </p>
+</div>
+
+<h2>Mini‑quiz</h2>
+<p class="jp-note">正しい文を選びましょう。</p>
+
+<div class="exercise-block">
+  <h3>1) （意味：「彼らは家にいます。」）</h3>
+
+  <p>
+    a) Ellos son en casa.<br>
+    b) Ellos están en casa.<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">正解：b) Ellos están en casa。</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) （意味：「彼はとても親切です。」）</h3>
+
+  <p>
+    a) Él es muy amable.<br>
+    b) Él está muy amable.<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">正解：a) Él es muy amable。</span>
+  </p>
+</div>
+
+</body>
+</html>

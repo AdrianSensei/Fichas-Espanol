@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Verbos regulares – repaso</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+
+<h1>Verbos regulares</h1>
+<p class="jp-note">規則動詞（-ar / -er / -ir）の基本活用</p>
+
+<h2>¿Qué es un verbo regular?</h2>
+<p class="jp-note">語幹は変わらず、語尾だけが変化する動詞です。</p>
+
+<p>Un <strong>verbo regular</strong> mantiene su raíz y cambia solo la terminación.</p>
+
+<h2>Modelo -AR: HABLAR</h2>
+<p class="jp-note">「話す」</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Persona</th>
+      <th>Forma</th>
+      <th>日本語</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>yo</td><td>hablo</td><td>話します</td></tr>
+    <tr><td>tú</td><td>hablas</td><td>話す（君）</td></tr>
+    <tr><td>él/ella/usted</td><td>habla</td><td>話します（彼/彼女/あなた）</td></tr>
+    <tr><td>nosotros/as</td><td>hablamos</td><td>話します（私たち）</td></tr>
+    <tr><td>vosotros/as</td><td>habláis</td><td>話す（君たち）</td></tr>
+    <tr><td>ellos/ellas/ustedes</td><td>hablan</td><td>話します（彼ら/あなたがた）</td></tr>
+  </tbody>
+</table>
+
+<h2>Modelo -ER: COMER</h2>
+<p class="jp-note">「食べる」</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Persona</th>
+      <th>Forma</th>
+      <th>日本語</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>yo</td><td>como</td><td>食べます</td></tr>
+    <tr><td>tú</td><td>comes</td><td>食べる（君）</td></tr>
+    <tr><td>él/ella/usted</td><td>come</td><td>食べます</td></tr>
+    <tr><td>nosotros/as</td><td>comemos</td><td>食べます（私たち）</td></tr>
+    <tr><td>vosotros/as</td><td>coméis</td><td>食べる（君たち）</td></tr>
+    <tr><td>ellos/ellas/ustedes</td><td>comen</td><td>食べます（彼ら/あなたがた）</td></tr>
+  </tbody>
+</table>
+
+<h2>Modelo -IR: VIVIR</h2>
+<p class="jp-note">「住む」</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Persona</th>
+      <th>Forma</th>
+      <th>日本語</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>yo</td><td>vivo</td><td>住みます</td></tr>
+    <tr><td>tú</td><td>vives</td><td>住む（君）</td></tr>
+    <tr><td>él/ella/usted</td><td>vive</td><td>住みます</td></tr>
+    <tr><td>nosotros/as</td><td>vivimos</td><td>住みます（私たち）</td></tr>
+    <tr><td>vosotros/as</td><td>vivís</td><td>住む（君たち）</td></tr>
+    <tr><td>ellos/ellas/ustedes</td><td>viven</td><td>住みます（彼ら/あなたがた）</td></tr>
+  </tbody>
+</table>
+
+<h2>Ejemplos</h2>
+<p class="jp-note">例文と日本語訳です。</p>
+
+<p>
+  <strong>Yo hablo español.</strong><br>
+  <span class="toggle" onclick="toggle('jp-f1')">日本語を見る / 隠す</span>
+  <span id="jp-f1" class="hidden">私はスペイン語を話します。</span>
+</p>
+
+<p>
+  <strong>Ella come sushi.</strong><br>
+  <span class="toggle" onclick="toggle('jp-f2')">日本語を見る / 隠す</span>
+  <span id="jp-f2" class="hidden">彼女は寿司を食べます。</span>
+</p>
+
+<p>
+  <strong>Nosotros vivimos en Japón.</strong><br>
+  <span class="toggle" onclick="toggle('jp-f3')">日本語を見る / 隠す</span>
+  <span id="jp-f3" class="hidden">私たちは日本に住んでいます。</span>
+</p>
+
+<h2>Ejercicios de repaso</h2>
+
+<div class="exercise-block">
+  <h3>1. Completa con la forma correcta</h3>
+  <p class="jp-note">正しい形を入れましょう。</p>
+
+  <p>
+    a) Yo ______ (hablar) japonés.  
+    <span class="toggle" onclick="toggle('r1')">Ver respuesta</span>
+    <span id="r1" class="hidden">hablo</span>
+  </p>
+
+  <p>
+    b) Tú ______ (comer) ramen.  
+    <span class="toggle" onclick="toggle('r2')">Ver respuesta</span>
+    <span id="r2" class="hidden">comes</span>
+  </p>
+
+  <p>
+    c) Ellos ______ (vivir) en México.  
+    <span class="toggle" onclick="toggle('r3')">Ver respuesta</span>
+    <span id="r3" class="hidden">viven</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Traduce al español</h3>
+  <p class="jp-note">スペイン語に訳しましょう。</p>
+
+  <p>
+    a) 私は毎日スペイン語を話します。  
+    <span class="toggle" onclick="toggle('r4')">Ver respuesta</span>
+    <span id="r4" class="hidden">Yo hablo español todos los días.</span>
+  </p>
+
+  <p>
+    b) 彼はよくパンを食べます。  
+    <span class="toggle" onclick="toggle('r5')">Ver respuesta</span>
+    <span id="r5" class="hidden">Él come pan a menudo.</span>
+  </p>
+</div>
+
+<h2>Mini‑quiz</h2>
+<p class="jp-note">正しい文を選びましょう。</p>
+
+<div class="exercise-block">
+  <h3>1) （意味：「彼女たちは東京に住んでいます。」）</h3>
+
+  <p>
+    a) Ellas viven en Tokio.<br>
+    b) Ellas vivís en Tokio.<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">正解：a) Ellas viven en Tokio。</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) （意味：「私は寿司を食べます。」）</h3>
+
+  <p>
+    a) Yo como sushi.<br>
+    b) Yo come sushi.<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">正解：a) Yo como sushi。</span>
+  </p>
+</div>
+
+</body>
+</html>

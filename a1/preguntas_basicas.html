@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Preguntas básicas – repaso</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.7;
+    margin: 40px auto;
+    max-width: 720px;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1.4em;
+  }
+
+  .jp-note {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+  }
+
+  .toggle {
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .exercise-block {
+    margin-bottom: 2em;
+  }
+</style>
+
+<script>
+  function toggle(id){
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+</script>
+
+</head>
+<body>
+
+<h1>Preguntas básicas</h1>
+<p class="jp-note">基本の質問文：qué / quién / dónde / cuándo / cómo / por qué</p>
+
+<h2>¿Cómo se forma una pregunta?</h2>
+<p class="jp-note">スペイン語の質問は「¿〜?」で囲みます。</p>
+
+<p>En español usamos signos de apertura y cierre: <strong>¿ ?</strong></p>
+<p>El orden más común es:</p>
+
+<ul>
+  <li><strong>Palabra interrogativa + verbo + sujeto</strong></li>
+</ul>
+
+<p class="jp-note">※主語は省略されることが多いです。</p>
+
+<h2>Palabras interrogativas</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Palabra</th>
+      <th>Significado</th>
+      <th>日本語</th>
+      <th>Ejemplo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>qué</td>
+      <td>what</td>
+      <td>何</td>
+      <td>¿Qué haces?</td>
+    </tr>
+    <tr>
+      <td>quién</td>
+      <td>who</td>
+      <td>誰</td>
+      <td>¿Quién es ella?</td>
+    </tr>
+    <tr>
+      <td>dónde</td>
+      <td>where</td>
+      <td>どこ</td>
+      <td>¿Dónde vives?</td>
+    </tr>
+    <tr>
+      <td>cuándo</td>
+      <td>when</td>
+      <td>いつ</td>
+      <td>¿Cuándo vienes?</td>
+    </tr>
+    <tr>
+      <td>cómo</td>
+      <td>how</td>
+      <td>どうやって / どのように</td>
+      <td>¿Cómo estás?</td>
+    </tr>
+    <tr>
+      <td>por qué</td>
+      <td>why</td>
+      <td>なぜ</td>
+      <td>¿Por qué estudias español?</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Ejemplos</h2>
+<p class="jp-note">例文と日本語訳です。</p>
+
+<p>
+  <strong>¿Qué comes?</strong><br>
+  <span class="toggle" onclick="toggle('jp-f1')">日本語を見る / 隠す</span>
+  <span id="jp-f1" class="hidden">何を食べていますか。</span>
+</p>
+
+<p>
+  <strong>¿Dónde está la estación?</strong><br>
+  <span class="toggle" onclick="toggle('jp-f2')">日本語を見る / 隠す</span>
+  <span id="jp-f2" class="hidden">駅はどこですか。</span>
+</p>
+
+<p>
+  <strong>¿Cómo te llamas?</strong><br>
+  <span class="toggle" onclick="toggle('jp-f3')">日本語を見る / 隠す</span>
+  <span id="jp-f3" class="hidden">お名前は何ですか。</span>
+</p>
+
+<h2>Ejercicios de repaso</h2>
+
+<div class="exercise-block">
+  <h3>1. Completa con la palabra correcta</h3>
+  <p class="jp-note">正しい疑問詞を入れましょう。</p>
+
+  <p>
+    a) ¿_____ vives? (どこ)  
+    <span class="toggle" onclick="toggle('r1')">Ver respuesta</span>
+    <span id="r1" class="hidden">dónde</span>
+  </p>
+
+  <p>
+    b) ¿_____ estudias español? (なぜ)  
+    <span class="toggle" onclick="toggle('r2')">Ver respuesta</span>
+    <span id="r2" class="hidden">por qué</span>
+  </p>
+
+  <p>
+    c) ¿_____ es él? (誰)  
+    <span class="toggle" onclick="toggle('r3')">Ver respuesta</span>
+    <span id="r3" class="hidden">quién</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2. Traduce al español</h3>
+  <p class="jp-note">スペイン語に訳しましょう。</p>
+
+  <p>
+    a) いつ来ますか。  
+    <span class="toggle" onclick="toggle('r4')">Ver respuesta</span>
+    <span id="r4" class="hidden">¿Cuándo vienes?</span>
+  </p>
+
+  <p>
+    b) どうしてスペイン語を勉強しますか。  
+    <span class="toggle" onclick="toggle('r5')">Ver respuesta</span>
+    <span id="r5" class="hidden">¿Por qué estudias español?</span>
+  </p>
+</div>
+
+<h2>Mini‑quiz</h2>
+<p class="jp-note">正しい文を選びましょう。</p>
+
+<div class="exercise-block">
+  <h3>1) （意味：「あなたはどこに住んでいますか。」）</h3>
+
+  <p>
+    a) ¿Qué vives?<br>
+    b) ¿Dónde vives?<br>
+    <span class="toggle" onclick="toggle('q1')">答えを見る</span>
+    <span id="q1" class="hidden">正解：b) ¿Dónde vives?。</span>
+  </p>
+</div>
+
+<div class="exercise-block">
+  <h3>2) （意味：「彼女は誰ですか。」）</h3>
+
+  <p>
+    a) ¿Quién es ella?<br>
+    b) ¿Cómo es ella?<br>
+    <span class="toggle" onclick="toggle('q2')">答えを見る</span>
+    <span id="q2" class="hidden">正解：a) ¿Quién es ella?。</span>
+  </p>
+</div>
+
+</body>
+</html>

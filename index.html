@@ -154,15 +154,18 @@
     <div class="signature" style="margin: 0;">Created by Adrian Sensei</div>
   </div>
 
-  <!-- ⭐ Aviso legal agregado aquí -->
+  <!-- ⭐ Aviso legal con año automático -->
   <div class="footer-note">
-    © 2026 Adrian Sensei. All rights reserved. 無断転載を禁じます。
+    © <span id="year"></span> Adrian Sensei. All rights reserved. 無断転載を禁じます。
   </div>
 
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js');
     }
+
+    // Año automático
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
 </body>

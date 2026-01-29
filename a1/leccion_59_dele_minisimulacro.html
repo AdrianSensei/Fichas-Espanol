@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lección 59 – Mini‑simulacro DELE A1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #2a4d69;
+    }
+    h2 {
+      color: #2a4d69;
+      margin-top: 25px;
+    }
+    .section-box {
+      background: #ffffff;
+      border: 1px solid #d0d7de;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-top: 18px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+    .texto, .audio, .pregunta {
+      background: #eef3f7;
+      padding: 14px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border-left: 4px solid #2a4d69;
+      white-space: pre-line;
+    }
+    button {
+      margin-top: 5px;
+      padding: 6px 10px;
+      cursor: pointer;
+      background: #e0e0e0;
+      color: #333;
+      border: 1px solid #c8c8c8;
+      border-radius: 6px;
+    }
+    button:hover {
+      background: #d5d5d5;
+    }
+    .answer {
+      display: none;
+      margin-top: 8px;
+      padding: 8px;
+      background: #f0f0f0;
+      border-left: 3px solid #999;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Lección 59 – Mini‑simulacro DELE A1</h1>
+
+<div class="section-box">
+  <h2>📚 1. Instrucciones generales</h2>
+
+  <p>Este mini‑simulacro incluye las cuatro partes del DELE A1:</p>
+
+  <ul>
+    <li>Comprensión de lectura</li>
+    <li>Comprensión auditiva (simulada por texto)</li>
+    <li>Expresión escrita</li>
+    <li>Expresión e interacción oral</li>
+  </ul>
+
+  <p>Formato compacto, ideal para práctica rápida.</p>
+</div>
+
+<!-- LECTURA -->
+<div class="section-box">
+  <h2>📖 2. Comprensión de lectura</h2>
+
+  <div class="texto">
+<strong>Texto</strong>
+
+“Hola, soy Marta. Trabajo en una librería del centro. 
+Abro a las 9:00 y cierro a las 17:00. 
+Los fines de semana no trabajo, así que visito a mis padres o salgo a caminar.”
+  </div>
+
+  <p><strong>1. ¿Dónde trabaja Marta?</strong></p>
+  <ul>
+    <li>A. En un supermercado</li>
+    <li>B. En una librería</li>
+    <li>C. En una oficina</li>
+  </ul>
+  <button onclick="toggleAnswer('l1')">Mostrar respuesta</button>
+  <div id="l1" class="answer">B. En una librería</div>
+
+  <p><strong>2. ¿Qué hace los fines de semana?</strong></p>
+  <ul>
+    <li>A. Trabaja</li>
+    <li>B. Estudia</li>
+    <li>C. Visita a sus padres o camina</li>
+  </ul>
+  <button onclick="toggleAnswer('l2')">Mostrar respuesta</button>
+  <div id="l2" class="answer">C. Visita a sus padres o camina</div>
+
+</div>
+
+<!-- AUDITIVA -->
+<div class="section-box">
+  <h2>🎧 3. Comprensión auditiva (simulada)</h2>
+
+  <div class="audio">
+<strong>Audio simulado</strong>
+
+“Buenas tardes. La clase de español empieza a las 18:00. 
+Por favor, lleguen diez minutos antes.”
+  </div>
+
+  <p><strong>1. ¿A qué hora empieza la clase?</strong></p>
+  <ul>
+    <li>A. A las 17:00</li>
+    <li>B. A las 18:00</li>
+    <li>C. A las 18:10</li>
+  </ul>
+  <button onclick="toggleAnswer('a1')">Mostrar respuesta</button>
+  <div id="a1" class="answer">B. A las 18:00</div>
+
+  <p><strong>2. ¿Qué deben hacer los estudiantes?</strong></p>
+  <ul>
+    <li>A. Llegar diez minutos antes</li>
+    <li>B. Llegar tarde</li>
+    <li>C. No asistir</li>
+  </ul>
+  <button onclick="toggleAnswer('a2')">Mostrar respuesta</button>
+  <div id="a2" class="answer">A. Llegar diez minutos antes</div>
+
+</div>
+
+<!-- ESCRITA -->
+<div class="section-box">
+  <h2>✏️ 4. Expresión escrita</h2>
+
+  <p><strong>Escribe un mensaje a tu amigo/a. Debes:</strong></p>
+  <ul>
+    <li>invitarlo/a a un plan</li>
+    <li>decir día y hora</li>
+    <li>preguntar si puede venir</li>
+  </ul>
+
+  <button onclick="toggleAnswer('e1')">Mostrar ejemplo</button>
+  <div id="e1" class="answer">
+Hola:
+Este sábado voy al cine a las 20:00. 
+¿Puedes venir conmigo?
+Avísame.
+  </div>
+
+</div>
+
+<!-- ORAL -->
+<div class="section-box">
+  <h2>🗣️ 5. Expresión e interacción oral</h2>
+
+  <p><strong>Responde oralmente (o por escrito aquí) a estas preguntas:</strong></p>
+
+  <div class="pregunta"><strong>1. ¿Qué haces un día normal?</strong></div>
+  <button onclick="toggleAnswer('o1')">Mostrar ejemplo</button>
+  <div id="o1" class="answer">Un día normal trabajo, estudio y hago ejercicio por la tarde.</div>
+
+  <div class="pregunta"><strong>2. ¿Qué lugares te gustan de tu ciudad?</strong></div>
+  <button onclick="toggleAnswer('o2')">Mostrar ejemplo</button>
+  <div id="o2" class="answer">Me gusta el parque y el centro porque son tranquilos.</div>
+
+</div>
+
+<!-- RESUMEN -->
+<div class="section-box">
+  <h2>🎯 6. Resumen del mini‑simulacro</h2>
+
+  <ul>
+    <li>Lectura: 2 preguntas</li>
+    <li>Auditiva simulada: 2 preguntas</li>
+    <li>Escrita: 1 mensaje</li>
+    <li>Oral: 2 preguntas</li>
+  </ul>
+
+  <p>Formato compacto, perfecto para práctica rápida antes del examen.</p>
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+  <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Volver al índice</a>
+</div>
+
+<script>
+function toggleAnswer(id) {
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
+</script>
+
+</body>
+</html>

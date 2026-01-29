@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lección 55 – DELE A1: Comprensión auditiva (Tarea 1)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #2a4d69;
+    }
+    h2 {
+      color: #2a4d69;
+      margin-top: 25px;
+    }
+    .section-box {
+      background: #ffffff;
+      border: 1px solid #d0d7de;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-top: 18px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+    .audio-texto {
+      background: #eef3f7;
+      padding: 14px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border-left: 4px solid #2a4d69;
+      font-style: italic;
+    }
+    button {
+      margin-top: 5px;
+      padding: 6px 10px;
+      cursor: pointer;
+      background: #e0e0e0;
+      color: #333;
+      border: 1px solid #c8c8c8;
+      border-radius: 6px;
+    }
+    button:hover {
+      background: #d5d5d5;
+    }
+    .answer {
+      display: none;
+      margin-top: 8px;
+      padding: 8px;
+      background: #f0f0f0;
+      border-left: 3px solid #999;
+    }
+    .jp {
+      color: #555;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Lección 55 – DELE A1: Comprensión auditiva (Tarea 1)</h1>
+
+<div class="section-box">
+  <h2>📚 1. Explicación de la tarea</h2>
+
+  <p>En la Tarea 1 del DELE A1 vas a escuchar <strong>audios muy breves</strong> y elegir la opción correcta.</p>
+
+  <p class="jp">DELE A1 のリスニングタスク1では、短い音声を聞いて正しい答えを選びます。</p>
+
+  <ul>
+    <li>Audios de 5–10 segundos</li>
+    <li>Una pregunta por audio</li>
+    <li>Opciones A, B, C</li>
+  </ul>
+
+  <p>En SenseiGate usamos <strong>textos que simulan los audios</strong>.</p>
+</div>
+
+<div class="section-box">
+  <h2>✏️ 2. Ejemplos modelo (estilo DELE)</h2>
+
+  <div class="audio-texto">
+    <strong>Audio 1 (simulado)</strong><br>
+    “Hola, soy Laura. Hoy no voy a la oficina. Trabajo desde casa.”
+  </div>
+
+  <p><strong>¿Dónde trabaja hoy Laura?</strong></p>
+  <ul>
+    <li>A. En la oficina</li>
+    <li>B. En casa</li>
+    <li>C. En un café</li>
+  </ul>
+  <button onclick="toggleAnswer('a1')">Mostrar respuesta</button>
+  <div id="a1" class="answer">B. En casa</div>
+
+  <hr>
+
+  <div class="audio-texto">
+    <strong>Audio 2 (simulado)</strong><br>
+    “El tren a Osaka sale a las 10:30.”
+  </div>
+
+  <p><strong>¿A qué hora sale el tren?</strong></p>
+  <ul>
+    <li>A. A las 10:00</li>
+    <li>B. A las 10:30</li>
+    <li>C. A las 11:00</li>
+  </ul>
+  <button onclick="toggleAnswer('a2')">Mostrar respuesta</button>
+  <div id="a2" class="answer">B. A las 10:30</div>
+
+</div>
+
+<div class="section-box">
+  <h2>📝 3. Mini‑práctica guiada</h2>
+
+  <div class="audio-texto">
+    <strong>Audio 3 (simulado)</strong><br>
+    “Hoy el restaurante está cerrado. Abrimos mañana.”
+  </div>
+
+  <p><strong>¿Qué pasa hoy?</strong></p>
+  <ul>
+    <li>A. El restaurante abre</li>
+    <li>B. El restaurante está cerrado</li>
+    <li>C. Hay descuento</li>
+  </ul>
+  <button onclick="toggleAnswer('a3')">Mostrar respuesta</button>
+  <div id="a3" class="answer">B. El restaurante está cerrado</div>
+
+  <hr>
+
+  <div class="audio-texto">
+    <strong>Audio 4 (simulado)</strong><br>
+    “Buenas tardes. La reunión empieza en cinco minutos.”
+  </div>
+
+  <p><strong>¿Cuándo empieza la reunión?</strong></p>
+  <ul>
+    <li>A. Ahora</li>
+    <li>B. En cinco minutos</li>
+    <li>C. Mañana</li>
+  </ul>
+  <button onclick="toggleAnswer('a4')">Mostrar respuesta</button>
+  <div id="a4" class="answer">B. En cinco minutos</div>
+
+</div>
+
+<div class="section-box">
+  <h2>📖 4. Audios estilo DELE (conjunto completo)</h2>
+
+  <div class="audio-texto">
+    <strong>Audio 5 (simulado)</strong><br>
+    “Hola, soy Marcos. Hoy no tengo clase, pero estudio en casa.”
+  </div>
+
+  <p><strong>1. ¿Qué hace hoy Marcos?</strong></p>
+  <ul>
+    <li>A. Va a clase</li>
+    <li>B. No estudia</li>
+    <li>C. Estudia en casa</li>
+  </ul>
+  <button onclick="toggleAnswer('d1')">Mostrar respuesta</button>
+  <div id="d1" class="answer">C. Estudia en casa</div>
+
+  <hr>
+
+  <div class="audio-texto">
+    <strong>Audio 6 (simulado)</strong><br>
+    “El autobús llega a las 14:20.”
+  </div>
+
+  <p><strong>2. ¿A qué hora llega el autobús?</strong></p>
+  <ul>
+    <li>A. A las 14:00</li>
+    <li>B. A las 14:20</li>
+    <li>C. A las 14:40</li>
+  </ul>
+  <button onclick="toggleAnswer('d2')">Mostrar respuesta</button>
+  <div id="d2" class="answer">B. A las 14:20</div>
+
+  <hr>
+
+  <div class="audio-texto">
+    <strong>Audio 7 (simulado)</strong><br>
+    “Hoy hace frío. Lleva una chaqueta.”
+  </div>
+
+  <p><strong>3. ¿Qué recomienda el hablante?</strong></p>
+  <ul>
+    <li>A. No salir</li>
+    <li>B. Llevar una chaqueta</li>
+    <li>C. Tomar un café</li>
+  </ul>
+  <button onclick="toggleAnswer('d3')">Mostrar respuesta</button>
+  <div id="d3" class="answer">B. Llevar una chaqueta</div>
+
+</div>
+
+<div class="section-box">
+  <h2>❓ 5. Preguntas de comprensión</h2>
+
+  <p>1. ¿Qué tipo de audios aparecen en esta tarea?<br>
+    <span class="jp">どんな音声が出ますか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc1')">Mostrar respuesta</button>
+  <div id="pc1" class="answer">Audios muy breves con información simple.</div>
+
+  <p>2. ¿Cuántas opciones tiene cada pregunta?<br>
+    <span class="jp">選択肢はいくつですか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc2')">Mostrar respuesta</button>
+  <div id="pc2" class="answer">Tres opciones.</div>
+
+  <p>3. ¿Qué debes identificar?<br>
+    <span class="jp">何を理解する必要がありますか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc3')">Mostrar respuesta</button>
+  <div id="pc3" class="answer">La idea principal del audio.</div>
+
+</div>
+
+<div class="section-box">
+  <h2>🎯 6. Resumen（まとめ）</h2>
+  <ul>
+    <li>Audios breves.</li>
+    <li>Una pregunta por audio.</li>
+    <li>Opciones A, B, C.</li>
+    <li>Formato idéntico al DELE A1 real.</li>
+  </ul>
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+  <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Volver al índice</a>
+</div>
+
+<script>
+function toggleAnswer(id) {
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
+</script>
+
+</body>
+</html>

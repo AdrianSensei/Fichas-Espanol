@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lección 57 – DELE A1: Expresión e interacción oral (Tarea 1)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #2a4d69;
+    }
+    h2 {
+      color: #2a4d69;
+      margin-top: 25px;
+    }
+    .section-box {
+      background: #ffffff;
+      border: 1px solid #d0d7de;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-top: 18px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+    .pregunta {
+      background: #eef3f7;
+      padding: 14px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border-left: 4px solid #2a4d69;
+    }
+    button {
+      margin-top: 5px;
+      padding: 6px 10px;
+      cursor: pointer;
+      background: #e0e0e0;
+      color: #333;
+      border: 1px solid #c8c8c8;
+      border-radius: 6px;
+    }
+    button:hover {
+      background: #d5d5d5;
+    }
+    .answer {
+      display: none;
+      margin-top: 8px;
+      padding: 8px;
+      background: #f0f0f0;
+      border-left: 3px solid #999;
+      white-space: pre-line;
+    }
+    .jp {
+      color: #555;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Lección 57 – DELE A1: Expresión e interacción oral (Tarea 1)</h1>
+
+<div class="section-box">
+  <h2>📚 1. Explicación de la tarea</h2>
+
+  <p>En la Tarea 1 del DELE A1 el examinador te hace <strong>preguntas personales muy simples</strong>.</p>
+
+  <p class="jp">DELE A1 の口頭タスク1では、試験官がとても簡単な個人的質問をします。</p>
+
+  <ul>
+    <li>Presentarte</li>
+    <li>Hablar de tu vida diaria</li>
+    <li>Hablar de gustos y rutinas</li>
+  </ul>
+
+  <p>Es una conversación muy básica.</p>
+</div>
+
+<div class="section-box">
+  <h2>✏️ 2. Preguntas típicas (estilo DELE)</h2>
+
+  <div class="pregunta"><strong>1. ¿Cómo te llamas?</strong></div>
+  <button onclick="toggleAnswer('r1')">Mostrar ejemplo</button>
+  <div id="r1" class="answer">Me llamo ______.</div>
+
+  <div class="pregunta"><strong>2. ¿De dónde eres?</strong></div>
+  <button onclick="toggleAnswer('r2')">Mostrar ejemplo</button>
+  <div id="r2" class="answer">Soy de ______.</div>
+
+  <div class="pregunta"><strong>3. ¿Dónde vives?</strong></div>
+  <button onclick="toggleAnswer('r3')">Mostrar ejemplo</button>
+  <div id="r3" class="answer">Vivo en ______.</div>
+
+  <div class="pregunta"><strong>4. ¿A qué te dedicas?</strong></div>
+  <button onclick="toggleAnswer('r4')">Mostrar ejemplo</button>
+  <div id="r4" class="answer">Soy ______ / Trabajo en ______.</div>
+
+  <div class="pregunta"><strong>5. ¿Qué haces en tu tiempo libre?</strong></div>
+  <button onclick="toggleAnswer('r5')">Mostrar ejemplo</button>
+  <div id="r5" class="answer">En mi tiempo libre ______.</div>
+
+</div>
+
+<div class="section-box">
+  <h2>📝 3. Mini‑práctica guiada</h2>
+
+  <p><strong>Responde a estas preguntas como en el examen:</strong></p>
+
+  <div class="pregunta"><strong>1. ¿Qué te gusta hacer los fines de semana?</strong></div>
+  <button onclick="toggleAnswer('p1')">Mostrar ejemplo</button>
+  <div id="p1" class="answer">Los fines de semana me gusta salir con mis amigos y descansar en casa.</div>
+
+  <div class="pregunta"><strong>2. ¿A qué hora te levantas normalmente?</strong></div>
+  <button onclick="toggleAnswer('p2')">Mostrar ejemplo</button>
+  <div id="p2" class="answer">Normalmente me levanto a las siete.</div>
+
+  <div class="pregunta"><strong>3. ¿Qué comida te gusta más?</strong></div>
+  <button onclick="toggleAnswer('p3')">Mostrar ejemplo</button>
+  <div id="p3" class="answer">Me gusta mucho la pasta.</div>
+
+</div>
+
+<div class="section-box">
+  <h2>📖 4. Simulación estilo DELE</h2>
+
+  <p><strong>El examinador pregunta:</strong></p>
+
+  <div class="pregunta"><strong>1. ¿Puedes hablarme de tu familia?</strong></div>
+  <button onclick="toggleAnswer('s1')">Mostrar ejemplo</button>
+  <div id="s1" class="answer">
+Tengo una familia pequeña. Vivo con mi hermano y mis padres. Nos llevamos muy bien.
+  </div>
+
+  <div class="pregunta"><strong>2. ¿Qué haces un día normal?</strong></div>
+  <button onclick="toggleAnswer('s2')">Mostrar ejemplo</button>
+  <div id="s2" class="answer">
+Un día normal me levanto temprano, trabajo o estudio y por la tarde hago ejercicio.
+  </div>
+
+  <div class="pregunta"><strong>3. ¿Qué lugares te gustan de tu ciudad?</strong></div>
+  <button onclick="toggleAnswer('s3')">Mostrar ejemplo</button>
+  <div id="s3" class="answer">
+Me gusta el parque y el centro porque son tranquilos y bonitos.
+  </div>
+
+</div>
+
+<div class="section-box">
+  <h2>❓ 5. Preguntas de comprensión</h2>
+
+  <p>1. ¿Qué tipo de preguntas aparecen?<br>
+    <span class="jp">どんな質問が出ますか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc1')">Mostrar respuesta</button>
+  <div id="pc1" class="answer">Preguntas personales muy simples.</div>
+
+  <p>2. ¿Debes hablar mucho?<br>
+    <span class="jp">たくさん話す必要がありますか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc2')">Mostrar respuesta</button>
+  <div id="pc2" class="answer">No, solo respuestas cortas y claras.</div>
+
+  <p>3. ¿Es una conversación difícil?<br>
+    <span class="jp">難しい会話ですか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc3')">Mostrar respuesta</button>
+  <div id="pc3" class="answer">No, es la parte más sencilla del examen oral.</div>
+
+</div>
+
+<div class="section-box">
+  <h2>🎯 6. Resumen（まとめ）</h2>
+  <ul>
+    <li>Preguntas personales.</li>
+    <li>Respuestas cortas.</li>
+    <li>Conversación básica.</li>
+    <li>Formato idéntico al DELE A1 real.</li>
+  </ul>
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+  <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Volver al índice</a>
+</div>
+
+<script>
+function toggleAnswer(id) {
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
+</script>
+
+</body>
+</html>

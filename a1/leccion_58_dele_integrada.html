@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lección 58 – DELE A1: Tarea integrada (Lectura + Escritura)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #2a4d69;
+    }
+    h2 {
+      color: #2a4d69;
+      margin-top: 25px;
+    }
+    .section-box {
+      background: #ffffff;
+      border: 1px solid #d0d7de;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-top: 18px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+    .texto {
+      background: #eef3f7;
+      padding: 14px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border-left: 4px solid #2a4d69;
+      white-space: pre-line;
+    }
+    button {
+      margin-top: 5px;
+      padding: 6px 10px;
+      cursor: pointer;
+      background: #e0e0e0;
+      color: #333;
+      border: 1px solid #c8c8c8;
+      border-radius: 6px;
+    }
+    button:hover {
+      background: #d5d5d5;
+    }
+    .answer {
+      display: none;
+      margin-top: 8px;
+      padding: 8px;
+      background: #f0f0f0;
+      border-left: 3px solid #999;
+      white-space: pre-line;
+    }
+    .jp {
+      color: #555;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Lección 58 – DELE A1: Tarea integrada (Lectura + Escritura)</h1>
+
+<div class="section-box">
+  <h2>📚 1. Explicación de la tarea</h2>
+
+  <p>En esta tarea integrada vas a leer un <strong>texto breve</strong> y luego escribir un <strong>mensaje corto</strong> relacionado con ese texto.</p>
+
+  <p class="jp">この統合タスクでは、短い文章を読んで、それに関連する短いメッセージを書きます。</p>
+
+  <ul>
+    <li>Lectura breve</li>
+    <li>Escritura de 30–40 palabras</li>
+    <li>3 puntos obligatorios</li>
+  </ul>
+
+  <p>Es una combinación típica en exámenes reales.</p>
+</div>
+
+<div class="section-box">
+  <h2>✏️ 2. Texto modelo (estilo DELE)</h2>
+
+  <div class="texto">
+<strong>Mensaje de Carla</strong>
+
+Hola:
+Este sábado hago una fiesta en mi casa para celebrar mi cumpleaños. 
+Empieza a las 19:00. Puedes traer a un amigo/a si quieres.
+¿Vienes?
+
+Carla
+  </div>
+
+  <p><strong>Ahora escribe una respuesta a Carla. Debes:</strong></p>
+  <ul>
+    <li>decir si vas o no</li>
+    <li>decir con quién vas</li>
+    <li>preguntar qué puedes llevar</li>
+  </ul>
+
+  <button onclick="toggleAnswer('m1')">Mostrar ejemplo</button>
+  <div id="m1" class="answer">
+Hola, Carla:
+Sí, voy a tu fiesta. Voy con mi compañero de clase. 
+¿Qué puedo llevar para la fiesta?
+Un abrazo.
+  </div>
+
+</div>
+
+<div class="section-box">
+  <h2>📝 3. Mini‑práctica guiada</h2>
+
+  <div class="texto">
+<strong>Mensaje de Tomás</strong>
+
+Hola:
+Mañana voy al parque a hacer un picnic. 
+Empiezo a las 12:00. ¿Quieres venir conmigo?
+Tomás
+  </div>
+
+  <p><strong>Escribe tu respuesta. Debes:</strong></p>
+  <ul>
+    <li>aceptar o rechazar la invitación</li>
+    <li>decir qué comida te gusta llevar</li>
+    <li>preguntar si necesitas llevar algo más</li>
+  </ul>
+
+  <button onclick="toggleAnswer('p1')">Mostrar ejemplo</button>
+  <div id="p1" class="answer">
+Hola, Tomás:
+Sí, quiero ir al picnic contigo. Me gusta llevar bocadillos y fruta. 
+¿Necesito llevar algo más?
+Gracias.
+  </div>
+
+</div>
+
+<div class="section-box">
+  <h2>📖 4. Tarea estilo DELE (completa)</h2>
+
+  <div class="texto">
+<strong>Mensaje de Laura</strong>
+
+Hola:
+El próximo domingo voy a visitar un museo nuevo en la ciudad. 
+La entrada es gratis y abre a las 10:00. 
+Si quieres, podemos ir juntos/as.
+Laura
+  </div>
+
+  <p><strong>Escribe tu respuesta. Debes:</strong></p>
+  <ul>
+    <li>decir si quieres ir</li>
+    <li>decir a qué hora puedes llegar</li>
+    <li>preguntar cómo llegar al museo</li>
+  </ul>
+
+  <button onclick="toggleAnswer('d1')">Mostrar ejemplo</button>
+  <div id="d1" class="answer">
+Hola, Laura:
+Sí, quiero ir contigo al museo. Puedo llegar a las diez en punto. 
+¿Sabes cómo puedo llegar desde la estación?
+Nos vemos.
+  </div>
+
+</div>
+
+<div class="section-box">
+  <h2>❓ 5. Preguntas de comprensión</h2>
+
+  <p>1. ¿Cuántas palabras debe tener tu mensaje?<br>
+    <span class="jp">何語くらい必要ですか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc1')">Mostrar respuesta</button>
+  <div id="pc1" class="answer">30–40 palabras.</div>
+
+  <p>2. ¿Qué debes incluir siempre?<br>
+    <span class="jp">必ず何を含めますか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc2')">Mostrar respuesta</button>
+  <div id="pc2" class="answer">Los 3 puntos obligatorios.</div>
+
+  <p>3. ¿Qué haces primero?<br>
+    <span class="jp">最初に何をしますか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc3')">Mostrar respuesta</button>
+  <div id="pc3" class="answer">Leer el mensaje original.</div>
+
+</div>
+
+<div class="section-box">
+  <h2>🎯 6. Resumen（まとめ）</h2>
+  <ul>
+    <li>Leer un mensaje.</li>
+    <li>Escribir una respuesta breve.</li>
+    <li>Seguir 3 puntos obligatorios.</li>
+    <li>Formato inspirado en el DELE A1 real.</li>
+  </ul>
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+  <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Volver al índice</a>
+</div>
+
+<script>
+function toggleAnswer(id) {
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
+</script>
+
+</body>
+</html>

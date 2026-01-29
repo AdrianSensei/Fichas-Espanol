@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lección 51 – DELE A1: Comprensión de lectura (Tarea 1)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #2a4d69;
+    }
+    h2 {
+      color: #2a4d69;
+      margin-top: 25px;
+    }
+    .section-box {
+      background: #ffffff;
+      border: 1px solid #d0d7de;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-top: 18px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+    .texto {
+      background: #eef3f7;
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border-left: 4px solid #2a4d69;
+    }
+    button {
+      margin-top: 5px;
+      padding: 6px 10px;
+      cursor: pointer;
+      background: #e0e0e0;
+      color: #333;
+      border: 1px solid #c8c8c8;
+      border-radius: 6px;
+    }
+    button:hover {
+      background: #d5d5d5;
+    }
+    .answer {
+      display: none;
+      margin-top: 8px;
+      padding: 8px;
+      background: #f0f0f0;
+      border-left: 3px solid #999;
+    }
+    .jp {
+      color: #555;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Lección 51 – DELE A1: Comprensión de lectura (Tarea 1)</h1>
+
+<div class="section-box">
+  <h2>📚 1. Explicación de la tarea</h2>
+
+  <p>En la Tarea 1 del DELE A1 vas a leer <strong>textos muy breves</strong> (anuncios, mensajes, notas, carteles) y elegir la opción correcta.</p>
+
+  <p class="jp">DELE A1 の読解タスク1では、短い文章（広告・メモ・掲示など）を読んで正しい答えを選びます。</p>
+
+  <ul>
+    <li>Textos muy cortos</li>
+    <li>Una pregunta por texto</li>
+    <li>3 opciones (A, B, C)</li>
+  </ul>
+
+  <p>Es la tarea más sencilla del examen, ideal para empezar.</p>
+</div>
+
+<div class="section-box">
+  <h2>✏️ 2. Ejemplos modelo (estilo DELE)</h2>
+
+  <div class="texto">
+    <strong>Texto 1</strong><br>
+    <em>“Cerrado los lunes. Abierto de martes a domingo.”</em>
+  </div>
+
+  <p><strong>¿Qué día NO abre este lugar?</strong></p>
+  <ul>
+    <li>A. El domingo</li>
+    <li>B. El lunes</li>
+    <li>C. El martes</li>
+  </ul>
+  <button onclick="toggleAnswer('e1')">Mostrar respuesta</button>
+  <div id="e1" class="answer">B. El lunes</div>
+
+  <hr>
+
+  <div class="texto">
+    <strong>Texto 2</strong><br>
+    <em>“Reunión a las 18:00 en la sala 3.”</em>
+  </div>
+
+  <p><strong>¿Qué indica el mensaje?</strong></p>
+  <ul>
+    <li>A. El lugar de la reunión</li>
+    <li>B. El tema de la reunión</li>
+    <li>C. La duración de la reunión</li>
+  </ul>
+  <button onclick="toggleAnswer('e2')">Mostrar respuesta</button>
+  <div id="e2" class="answer">A. El lugar de la reunión</div>
+
+  <hr>
+
+  <div class="texto">
+    <strong>Texto 3</strong><br>
+    <em>“Se busca profesor de español. Enviar CV a info@idiomas.com.”</em>
+  </div>
+
+  <p><strong>¿Qué necesita la empresa?</strong></p>
+  <ul>
+    <li>A. Un estudiante</li>
+    <li>B. Un profesor</li>
+    <li>C. Un traductor</li>
+  </ul>
+  <button onclick="toggleAnswer('e3')">Mostrar respuesta</button>
+  <div id="e3" class="answer">B. Un profesor</div>
+
+</div>
+
+<div class="section-box">
+  <h2>📝 3. Mini‑práctica guiada</h2>
+
+  <div class="texto">
+    <strong>Texto 4</strong><br>
+    <em>“Clases de yoga: lunes y miércoles, 19:00–20:00.”</em>
+  </div>
+
+  <p><strong>¿Cuándo son las clases?</strong></p>
+  <ul>
+    <li>A. Los lunes y martes</li>
+    <li>B. Los miércoles y viernes</li>
+    <li>C. Los lunes y miércoles</li>
+  </ul>
+  <button onclick="toggleAnswer('e4')">Mostrar respuesta</button>
+  <div id="e4" class="answer">C. Los lunes y miércoles</div>
+
+  <hr>
+
+  <div class="texto">
+    <strong>Texto 5</strong><br>
+    <em>“No usar el ascensor. En reparación.”</em>
+  </div>
+
+  <p><strong>¿Qué pasa con el ascensor?</strong></p>
+  <ul>
+    <li>A. Está cerrado</li>
+    <li>B. Está en reparación</li>
+    <li>C. Está funcionando</li>
+  </ul>
+  <button onclick="toggleAnswer('e5')">Mostrar respuesta</button>
+  <div id="e5" class="answer">B. Está en reparación</div>
+
+</div>
+
+<div class="section-box">
+  <h2>📖 4. Texto de lectura estilo DELE</h2>
+
+  <div class="texto">
+    <strong>Texto 6</strong><br>
+    <em>“Oferta especial: 2×1 en entradas de cine todos los jueves.”</em>
+  </div>
+
+  <p><strong>¿Qué ofrece el cine?</strong></p>
+  <ul>
+    <li>A. Entradas gratis todos los días</li>
+    <li>B. Dos entradas por el precio de una los jueves</li>
+    <li>C. Descuento solo para estudiantes</li>
+  </ul>
+  <button onclick="toggleAnswer('e6')">Mostrar respuesta</button>
+  <div id="e6" class="answer">B. Dos entradas por el precio de una los jueves</div>
+
+</div>
+
+<div class="section-box">
+  <h2>❓ 5. Preguntas de comprensión</h2>
+
+  <p>1. ¿Qué tipo de textos aparecen en esta tarea?<br>
+    <span class="jp">どんな種類の文章が出ますか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc1')">Mostrar respuesta</button>
+  <div id="pc1" class="answer">Textos breves: anuncios, notas, mensajes, carteles.</div>
+
+  <p>2. ¿Cuántas opciones tiene cada pregunta?<br>
+    <span class="jp">選択肢はいくつですか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc2')">Mostrar respuesta</button>
+  <div id="pc2" class="answer">Tres opciones.</div>
+
+  <p>3. ¿Es una tarea difícil?<br>
+    <span class="jp">難しいタスクですか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc3')">Mostrar respuesta</button>
+  <div id="pc3" class="answer">No, es la más sencilla del examen.</div>
+
+</div>
+
+<div class="section-box">
+  <h2>🎯 6. Resumen（まとめ）</h2>
+  <ul>
+    <li>Textos muy breves.</li>
+    <li>Una pregunta por texto.</li>
+    <li>3 opciones (A, B, C).</li>
+    <li>Formato idéntico al DELE A1 real.</li>
+  </ul>
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+  <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Volver al índice</a>
+</div>
+
+<script>
+function toggleAnswer(id) {
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
+</script>
+
+</body>
+</html>

@@ -55,9 +55,9 @@
     }
 
     .btn {
-      display: block;          /* ← CAMBIO: ahora en bloque */
-      width: 260px;            /* ← ancho fijo para alineación perfecta */
-      margin: 20px auto;       /* ← centrado vertical */
+      display: block;
+      width: 260px;
+      margin: 20px auto;
       padding: 18px 40px;
       font-size: 22px;
       color: white;
@@ -69,6 +69,17 @@
 
     .btn:hover {
       background-color: #0056b3;
+    }
+
+    /* ⭐ MISMA CLASE QUE EN INGLÉS */
+    .link-blue {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .link-blue:hover {
+      color: #0056b3;
     }
 
     .mini-table {
@@ -143,10 +154,8 @@
     <table>
       <tr>
         <th colspan="2">
-  <a href="cefr_dele_guide.html" style="color:#2a6ebb; text-decoration:none; font-weight:bold;">
-    CEFR ↔ DELE Levels
-  </a>
-</th>
+          <a href="cefr_dele_guide.html" class="link-blue">CEFR ↔ DELE Levels</a>
+        </th>
       </tr>
       <tr><td>C2</td><td>DELE C2</td></tr>
       <tr><td>C1</td><td>DELE C1</td></tr>

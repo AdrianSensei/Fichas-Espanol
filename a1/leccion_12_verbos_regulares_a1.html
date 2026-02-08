@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Verbos regulares en presente</title>
+
+<style>
+  body {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.7;
+    background: #f5f7fa;
+    font-family: system-ui, sans-serif;
+  }
+
+  .section-box {
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin-top: 28px;
+  }
+
+  button {
+    margin-top: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #c8c8c8;
+    border-radius: 6px;
+  }
+
+  button:hover {
+    background: #d5d5d5;
+  }
+
+  .answer {
+    display: none;
+    margin-top: 8px;
+    padding: 8px;
+    background: #f0f0f0;
+    border-left: 3px solid #999;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  .jp-note {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 1em;
+  }
+</style>
+
+<script>
+function toggleAnswer(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
+}
+</script>
+
+</head>
+<body>
+
+<h1>Lección 12 – Verbos regulares en presente</h1>
+<p>Nivel: A1</p>
+
+<!-- 📚 EXPLICACIÓN GRAMATICAL -->
+<h2>📚 Explicación gramatical</h2>
+<div class="section-box">
+
+<p><strong>1. ¿Qué es un verbo regular?</strong></p>
+<p>Un verbo regular mantiene su raíz y cambia solo la terminación según la persona.</p>
+<p class="jp-note">規則動詞は語幹が変わらず、語尾だけが変化します。</p>
+
+<p><strong>2. Tres grupos principales</strong></p>
+<ul>
+  <li>-AR → hablar</li>
+  <li>-ER → comer</li>
+  <li>-IR → vivir</li>
+</ul>
+<p class="jp-note">3つのグループに分かれます。</p>
+
+<p><strong>3. Terminaciones básicas</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Grupo</th><th>Terminaciones</th><th>日本語</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>-AR</td><td>o, as, a, amos, áis, an</td><td>-ar 動詞の語尾</td></tr>
+    <tr><td>-ER</td><td>o, es, e, emos, éis, en</td><td>-er 動詞の語尾</td></tr>
+    <tr><td>-IR</td><td>o, es, e, imos, ís, en</td><td>-ir 動詞の語尾</td></tr>
+  </tbody>
+</table>
+
+</div>
+
+<!-- ✏️ ORACIONES CORTAS -->
+<h2>✏️ Oraciones cortas de ejemplo</h2>
+<div class="section-box">
+
+<p><strong>Yo hablo español.</strong><br>私はスペイン語を話します。</p>
+<p><strong>Tú comes pan.</strong><br>君はパンを食べます。</p>
+<p><strong>Ella vive en Osaka.</strong><br>彼女は大阪に住んでいます。</p>
+<p><strong>Nosotros estudiamos mucho.</strong><br>私たちはたくさん勉強します。</p>
+<p><strong>Ellos leen libros.</strong><br>彼らは本を読みます。</p>
+<p><strong>Usted trabaja aquí.</strong><br>あなたはここで働きます。</p>
+<p><strong>Vosotros abrís la ventana.</strong><br>君たちは窓を開けます。</p>
+
+</div>
+
+<!-- 📝 ORACIONES LARGAS -->
+<h2>📝 Oraciones largas de ejemplo</h2>
+<div class="section-box">
+
+<p><strong>Yo hablo español todos los días para practicar más.</strong><br>私は毎日スペイン語を話して、もっと練習します。</p>
+
+<p><strong>Mi hermano come verduras porque quiere estar sano.</strong><br>私の兄（弟）は健康になりたいので野菜を食べます。</p>
+
+<p><strong>Nosotros vivimos en una ciudad pequeña cerca del mar.</strong><br>私たちは海の近くの小さな町に住んでいます。</p>
+
+<p><strong>Ellas estudian en la biblioteca cuando tienen exámenes.</strong><br>彼女たちは試験のとき図書館で勉強します。</p>
+
+<p><strong>Yo escribo correos largos para mis amigos en otros países.</strong><br>私は他の国にいる友だちに長いメールを書きます。</p>
+
+</div>
+
+<!-- 🧩 EJERCICIOS -->
+<h2>🧩 Ejercicios prácticos</h2>
+<div class="section-box">
+
+<h3>Ejercicio A – Elige la opción correcta</h3>
+<p class="jp-note">正しい形を選びましょう。</p>
+
+<p>Yo ______ japonés. (hablar)</p>
+<button onclick="toggleAnswer('ea1')">Mostrar respuesta</button>
+<div id="ea1" class="answer">hablo</div>
+
+<p>Tú ______ ramen. (comer)</p>
+<button onclick="toggleAnswer('ea2')">Mostrar respuesta</button>
+<div id="ea2" class="answer">comes</div>
+
+<p>Ellos ______ en México. (vivir)</p>
+<button onclick="toggleAnswer('ea3')">Mostrar respuesta</button>
+<div id="ea3" class="answer">viven</div>
+
+<p>Nosotros ______ café por la mañana. (beber)</p>
+<button onclick="toggleAnswer('ea4')">Mostrar respuesta</button>
+<div id="ea4" class="answer">bebemos</div>
+
+<p>Ella ______ mucho en clase. (estudiar)</p>
+<button onclick="toggleAnswer('ea5')">Mostrar respuesta</button>
+<div id="ea5" class="answer">estudia</div>
+
+<br>
+
+<h3>Ejercicio B – Completa la oración</h3>
+<p class="jp-note">文を完成させましょう。</p>
+
+<p>Yo ______ en Tokio. (vivir)</p>
+<button onclick="toggleAnswer('eb1')">Mostrar respuesta</button>
+<div id="eb1" class="answer">vivo</div>
+
+<p>Mi amigo ______ español muy bien. (hablar)</p>
+<button onclick="toggleAnswer('eb2')">Mostrar respuesta</button>
+<div id="eb2" class="answer">habla</div>
+
+<p>Nosotros ______ sushi los domingos. (comer)</p>
+<button onclick="toggleAnswer('eb3')">Mostrar respuesta</button>
+<div id="eb3" class="answer">comemos</div>
+
+<p>Ellas ______ en una oficina grande. (trabajar)</p>
+<button onclick="toggleAnswer('eb4')">Mostrar respuesta</button>
+<div id="eb4" class="answer">trabajan</div>
+
+<p>Tú ______ muchos libros cada mes. (leer)</p>
+<button onclick="toggleAnswer('eb5')">Mostrar respuesta</button>
+<div id="eb5" class="answer">lees</div>
+
+</div>
+
+<!-- 📖 TEXTO DE LECTURA -->
+<h2>📖 Texto de lectura</h2>
+<div class="section-box">
+
+<p><strong>Mi rutina diaria</strong></p>
+
+<p>
+Cada día me levanto temprano y preparo el desayuno. Después estudio español durante una hora y luego trabajo en mi computadora. Por la tarde camino por mi barrio y hablo con mis vecinos. Por la noche leo un libro o escribo mensajes para mis amigos.
+</p>
+
+<p class="jp-note">
+毎日私は早く起きて朝ごはんを作ります。その後1時間スペイン語を勉強して、パソコンで仕事をします。午後は近所を散歩して、近所の人と話します。夜は本を読んだり、友だちにメッセージを書いたりします。
+</p>
+
+</div>
+
+<!-- ❓ PREGUNTAS DE COMPRENSIÓN -->
+<h2>❓ Preguntas de comprensión</h2>
+<div class="section-box">
+
+<p>1. ¿Qué hace primero por la mañana?<br>朝、最初に何をしますか？</p>
+<button onclick="toggleAnswer('pc1')">Mostrar respuesta</button>
+<div id="pc1" class="answer">Se levanta y prepara el desayuno.</div>
+
+<p>2. ¿Cuánto tiempo estudia español?<br>どれくらいスペイン語を勉強しますか？</p>
+<button onclick="toggleAnswer('pc2')">Mostrar respuesta</button>
+<div id="pc2" class="answer">Una hora.</div>
+
+<p>3. ¿Qué hace por la tarde?<br>午後に何をしますか？</p>
+<button onclick="toggleAnswer('pc3')">Mostrar respuesta</button>
+<div id="pc3" class="answer">Camina por su barrio.</div>
+
+<p>4. ¿Con quién habla?<br>誰と話しますか？</p>
+<button onclick="toggleAnswer('pc4')">Mostrar respuesta</button>
+<div id="pc4" class="answer">Con sus vecinos.</div>
+
+<p>5. ¿Qué hace por la noche?<br>夜に何をしますか？</p>
+<button onclick="toggleAnswer('pc5')">Mostrar respuesta</button>
+<div id="pc5" class="answer">Lee un libro o escribe mensajes.</div>
+
+</div>
+
+<!-- 🎯 RESUMEN -->
+<h2>🎯 Resumen（まとめ）</h2>
+<div class="section-box">
+
+<p><strong>Verbos regulares</strong>: cambian solo la terminación.<br>規則動詞は語尾だけが変化します。</p>
+
+<p><strong>Tres grupos</strong>: -ar, -er, -ir.<br>3つのグループがあります。</p>
+
+<p><strong>Raíz estable</strong>: la raíz no cambia.<br>語幹は変わりません。</p>
+
+<p><strong>Terminaciones básicas</strong>: o, as/es, a/e, amos/emos/imos, áis/éis/ís, an/en.<br>基本の語尾変化です。</p>
+
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+    <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Volver al índice</a>
+</div>
+
+</body>
+</html>

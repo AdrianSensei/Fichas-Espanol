@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Verbos irregulares esenciales</title>
+
+<style>
+  body {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.7;
+    background: #f5f7fa;
+    font-family: system-ui, sans-serif;
+  }
+
+  .section-box {
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin-top: 28px;
+    border-radius: 8px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+  }
+
+  th {
+    background: #f7f7f7;
+  }
+
+  button {
+    margin-top: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #c8c8c8;
+    border-radius: 6px;
+  }
+
+  button:hover {
+    background: #d5d5d5;
+  }
+
+  .answer {
+    display: none;
+    margin-top: 8px;
+    padding: 8px;
+    background: #f0f0f0;
+    border-left: 3px solid #999;
+  }
+
+  .jp-note {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 1em;
+  }
+</style>
+
+<script>
+function toggleAnswer(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
+}
+</script>
+
+</head>
+<body>
+
+<h1>Lección 13 – Verbos irregulares esenciales</h1>
+<p>Nivel: A1</p>
+
+<!-- 📚 EXPLICACIÓN GRAMATICAL -->
+<h2>📚 Explicación gramatical</h2>
+<div class="section-box">
+
+<p><strong>1. ¿Qué es un verbo irregular?</strong></p>
+<p>Un verbo irregular cambia su raíz o su forma en algunas personas del presente.</p>
+<p class="jp-note">不規則動詞は現在形で語幹や形が変わります。</p>
+
+<p><strong>2. Verbos esenciales en A1</strong></p>
+<ul>
+  <li><strong>tener</strong>（持つ）</li>
+  <li><strong>ir</strong>（行く）</li>
+  <li><strong>hacer</strong>（する）</li>
+  <li><strong>venir</strong>（来る）</li>
+</ul>
+<p class="jp-note">A1レベルでよく使う不規則動詞です。</p>
+
+<p><strong>3. Cambios principales</strong></p>
+<p>Algunos verbos cambian vocales (e → ie), otros cambian solo la forma de “yo”.</p>
+<p class="jp-note">語幹母音が変わるものや、「yo」だけ特別な形になるものがあります。</p>
+
+</div>
+
+<!-- ✏️ ORACIONES CORTAS -->
+<h2>✏️ Oraciones cortas de ejemplo</h2>
+<div class="section-box">
+
+<p><strong>Yo tengo un perro.</strong><br>私は犬を一匹飼っています。</p>
+<p><strong>Tú vas al supermercado.</strong><br>君はスーパーに行きます。</p>
+<p><strong>Ella hace la cena.</strong><br>彼女は夕食を作ります。</p>
+<p><strong>Nosotros venimos temprano.</strong><br>私たちは早く来ます。</p>
+<p><strong>Ellos tienen clase hoy.</strong><br>彼らは今日授業があります。</p>
+<p><strong>Usted va al hospital.</strong><br>あなたは病院に行きます。</p>
+<p><strong>Vosotros hacéis deporte.</strong><br>君たちは運動をします。</p>
+
+</div>
+
+<!-- 📝 ORACIONES LARGAS -->
+<h2>📝 Oraciones largas de ejemplo</h2>
+<div class="section-box">
+
+<p><strong>Yo tengo muchos libros porque me gusta leer cada noche.</strong><br>私は毎晩読むのが好きなので本をたくさん持っています。</p>
+
+<p><strong>Mi hermana va a la universidad todos los días en bicicleta.</strong><br>私の姉（妹）は毎日自転車で大学に行きます。</p>
+
+<p><strong>Nosotros hacemos ejercicio por la mañana para estar saludables.</strong><br>私たちは健康のために朝運動します。</p>
+
+<p><strong>Mis amigos vienen a mi casa los fines de semana para estudiar juntos.</strong><br>友だちは週末に一緒に勉強するために私の家に来ます。</p>
+
+<p><strong>Yo hago muchas tareas porque tengo clases difíciles este semestre.</strong><br>私は今学期難しい授業があるので宿題がたくさんあります。</p>
+
+</div>
+
+<!-- 🧩 EJERCICIOS -->
+<h2>🧩 Ejercicios prácticos</h2>
+<div class="section-box">
+
+<h3>Ejercicio A – Elige la opción correcta</h3>
+<p class="jp-note">正しい形を選びましょう。</p>
+
+<p>Yo ______ un coche. (tener)</p>
+<button onclick="toggleAnswer('ea1')">Mostrar respuesta</button>
+<div id="ea1" class="answer">tengo</div>
+
+<p>Tú ______ al médico. (ir)</p>
+<button onclick="toggleAnswer('ea2')">Mostrar respuesta</button>
+<div id="ea2" class="answer">vas</div>
+
+<p>Ella ______ la comida. (hacer)</p>
+<button onclick="toggleAnswer('ea3')">Mostrar respuesta</button>
+<div id="ea3" class="answer">hace</div>
+
+<p>Nosotros ______ mañana. (venir)</p>
+<button onclick="toggleAnswer('ea4')">Mostrar respuesta</button>
+<div id="ea4" class="answer">venimos</div>
+
+<p>Ellos ______ muchos amigos. (tener)</p>
+<button onclick="toggleAnswer('ea5')">Mostrar respuesta</button>
+<div id="ea5" class="answer">tienen</div>
+
+<br>
+
+<h3>Ejercicio B – Completa la oración</h3>
+<p class="jp-note">文を完成させましょう。</p>
+
+<p>Yo ______ a casa después del trabajo. (ir)</p>
+<button onclick="toggleAnswer('eb1')">Mostrar respuesta</button>
+<div id="eb1" class="answer">voy</div>
+
+<p>Mi madre ______ flores en el jardín. (tener)</p>
+<button onclick="toggleAnswer('eb2')">Mostrar respuesta</button>
+<div id="eb2" class="answer">tiene</div>
+
+<p>Nosotros ______ la tarea juntos. (hacer)</p>
+<button onclick="toggleAnswer('eb3')">Mostrar respuesta</button>
+<div id="eb3" class="answer">hacemos</div>
+
+<p>Ellos ______ a mi casa por la tarde. (venir)</p>
+<button onclick="toggleAnswer('eb4')">Mostrar respuesta</button>
+<div id="eb4" class="answer">vienen</div>
+
+<p>Tú ______ muchas actividades los sábados. (hacer)</p>
+<button onclick="toggleAnswer('eb5')">Mostrar respuesta</button>
+<div id="eb5" class="answer">haces</div>
+
+</div>
+
+<!-- 📖 TEXTO DE LECTURA -->
+<h2>📖 Texto de lectura</h2>
+<div class="section-box">
+
+<p><strong>Cosas que hago cada día</strong></p>
+
+<p>
+Cada día tengo muchas cosas que hacer. Por la mañana voy al trabajo y hago mis tareas principales. Después del almuerzo vengo a casa un momento para descansar. Por la tarde hago ejercicio y preparo la cena. A veces voy al supermercado si necesito algo. Siempre tengo un día activo y variado.
+</p>
+
+<p class="jp-note">
+毎日私はやることがたくさんあります。朝は仕事に行き、主な作業をします。昼食のあと少し家に戻って休みます。午後は運動をして夕食を作ります。必要なものがあればスーパーに行きます。いつも活動的で変化のある一日を過ごしています。
+</p>
+
+</div>
+
+<!-- ❓ PREGUNTAS DE COMPRENSIÓN -->
+<h2>❓ Preguntas de comprensión</h2>
+<div class="section-box">
+
+<p>1. ¿Qué hace por la mañana?<br>朝は何をしますか？</p>
+<button onclick="toggleAnswer('pc1')">Mostrar respuesta</button>
+<div id="pc1" class="answer">Va al trabajo y hace sus tareas.</div>
+
+<p>2. ¿Qué hace después del almuerzo?<br>昼食のあと何をしますか？</p>
+<button onclick="toggleAnswer('pc2')">Mostrar respuesta</button>
+<div id="pc2" class="answer">Viene a casa para descansar.</div>
+
+<p>3. ¿Qué hace por la tarde?<br>午後に何をしますか？</p>
+<button onclick="toggleAnswer('pc3')">Mostrar respuesta</button>
+<div id="pc3" class="answer">Hace ejercicio y prepara la cena.</div>
+
+<p>4. ¿Cuándo va al supermercado?<br>いつスーパーに行きますか？</p>
+<button onclick="toggleAnswer('pc4')">Mostrar respuesta</button>
+<div id="pc4" class="answer">Cuando necesita algo.</div>
+
+<p>5. ¿Cómo describe su día?<br>一日をどう説明していますか？</p>
+<button onclick="toggleAnswer('pc5')">Mostrar respuesta</button>
+<div id="pc5" class="answer">Dice que es un día activo y variado.</div>
+
+</div>
+
+<!-- 🎯 RESUMEN -->
+<h2>🎯 Resumen（まとめ）</h2>
+<div class="section-box">
+
+<p><strong>Verbos irregulares</strong>: cambian su forma en algunas personas.<br>不規則動詞は一部の人称で形が変わります。</p>
+
+<p><strong>Tener / ir / hacer / venir</strong>: verbos esenciales del nivel A1.<br>A1で最も重要な不規則動詞です。</p>
+
+<p><strong>Formas especiales</strong>: tengo, voy, hago, vengo.<br>特別な形を覚えましょう。</p>
+
+<p><strong>Cambios vocálicos</strong>: e → ie en algunos verbos.<br>一部の動詞は語幹母音が変わります。</p>
+
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+    <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Volver al índice</a>
+</div>
+
+</body>
+</html>

@@ -414,7 +414,8 @@
 <script>
 function toggleAnswer(id) {
   const el = document.getElementById(id);
-  el.style.display = el.style.display === "none" ? "block" : "none";
+  const current = window.getComputedStyle(el).display;
+el.style.display = current === "none" ? "block" : "none";
 }
 </script>
 

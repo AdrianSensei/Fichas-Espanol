@@ -1,20 +1,21 @@
 {
-  "background_color": "#e3eef3",
-  "dir": "ltr",
-  "display": "standalone",
   "name": "Adrian Sensei – Spanish Files",
-  "orientation": "any",
-  "scope": "/Fichas-Espanol/",
   "short_name": "Adrian Sensei",
   "start_url": "/Fichas-Espanol/index.html",
+  "scope": "/Fichas-Espanol/",
+  "display": "standalone",
+  "background_color": "#e3eef3",
   "theme_color": "#e3eef3",
+  "orientation": "any",
+  "dir": "ltr",
   "id": "com.adriansensei.spanish",
   "description": "Clear, structured Spanish learning sheets for independent learners.",
   "icons": [
     {
       "src": "assets/icons/icon_es_512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

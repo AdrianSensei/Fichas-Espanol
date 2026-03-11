@@ -209,25 +209,25 @@ el.style.display = current === "none" ? "block" : "none";
   <div id="ea5" class="answer">Me gusta aquella playa tranquila.</div>
 
   <h3 style="margin-top:22px;">Ejercicio B – Completa la oración</h3>
-  <p class="jp-note">文を完成させましょう。（ヒント：este / ese / aquel + 名詞）</p>
+  <p class="jp-note">距離のヒントを見て、正しい指示形容詞を入れましょう。</p>
 
-  <p>a) ______ perro es de mi vecino.</p>
+  <p>a) (cerca de ti) ______ perro es de tu vecino.</p>
   <button onclick="toggleAnswer('eb1')">Mostrar respuesta</button>
-  <div id="eb1" class="answer">Ese perro es de mi vecino.</div>
+  <div id="eb1" class="answer">Ese perro es de tu vecino.</div>
 
-  <p>b) ______ mochila roja es de mi hermana.</p>
+  <p>b) (cerca de mí) ______ mochila roja es de mi hermana.</p>
   <button onclick="toggleAnswer('eb2')">Mostrar respuesta</button>
   <div id="eb2" class="answer">Esta mochila roja es de mi hermana.</div>
 
-  <p>c) ______ casas grandes están en la montaña.</p>
+  <p>c) (muy lejos) ______ casas grandes están en la montaña.</p>
   <button onclick="toggleAnswer('eb3')">Mostrar respuesta</button>
   <div id="eb3" class="answer">Aquellas casas grandes están en la montaña.</div>
 
-  <p>d) ______ lápices son para la clase de arte.</p>
+  <p>d) (cerca de mí) ______ lápices son para la clase de arte.</p>
   <button onclick="toggleAnswer('eb4')">Mostrar respuesta</button>
   <div id="eb4" class="answer">Estos lápices son para la clase de arte.</div>
 
-  <p>e) No conozco bien ______ persona.</p>
+  <p>e) (cerca de ti) No conozco bien ______ persona.</p>
   <button onclick="toggleAnswer('eb5')">Mostrar respuesta</button>
   <div id="eb5" class="answer">No conozco bien a esa persona.</div>
 </div>
@@ -235,43 +235,60 @@ el.style.display = current === "none" ? "block" : "none";
 <!-- 📖 5. Texto de Lectura -->
 <h2>📖 5. Texto de lectura（短い読解文）</h2>
 <div class="section-box">
-  <h3>Esto, eso y aquello en la tienda</h3>
+  <h3>En la tienda</h3>
 
   <p>
-    Hoy entro en una tienda pequeña con mi amiga. Cerca de la puerta veo este bolso rojo y me gusta mucho. En el centro está ese sombrero azul que prefiere ella. Al fondo, aquel abrigo negro es muy caro, pero es muy elegante para mí y para ella también hoy allí.
+    Estoy en una tienda con mi amiga. Veo este bolso rojo aquí, cerca de mí. Ese sombrero azul está cerca de mi amiga. Aquella chaqueta negra está al fondo de la tienda. Los tres son bonitos, pero no tengo dinero.
   </p>
 
-  <p class="example-jp-title"><strong>店の中のこれ・それ・あれ</strong></p>
+  <p class="example-jp-title"><strong>店の中で</strong></p>
 
   <p class="jp-note">
-    今日は友だちと小さな店に入ります。入口の近くで、この赤いかばんが見えて、とても気に入ります。真ん中には、彼女が気に入っているその青い帽子があります。奥には、あの黒いコートがあります。とても高いですが、私にも彼女にもとてもエレガントに見えます。
+    私は友だちと店にいます。私の近くに、この赤いかばんがあります。その青い帽子は友だちの近くにあります。あの黒いジャケットは店の奥にあります。三つともきれいですが、お金がありません。
   </p>
+
 </div>
 
 <!-- ❓ 6. Preguntas de comprensión -->
 <h2>❓ 6. Preguntas de comprensión（読解問題）</h2>
 <div class="section-box">
-  <p>1) ¿Con quién entra el narrador en la tienda?<br><span class="jp-note">語り手は誰と店に入りますか。</span></p>
-  <button onclick="toggleAnswer('c1')">Mostrar respuesta</button>
-  <div id="c1" class="answer">Entra con su amiga.</div>
 
-  <p>2) ¿Qué objeto ve cerca de la puerta?<br><span class="jp-note">入口の近くで何を見ますか。</span></p>
-  <button onclick="toggleAnswer('c2')">Mostrar respuesta</button>
-  <div id="c2" class="answer">Ve este bolso rojo.</div>
+  <div class="item">
+    1) ¿Dónde está el narrador?<br>
+    <span class="jp-note">語り手はどこにいますか。</span><br>
+    <button onclick="toggleAnswer('c1')">Mostrar respuesta</button>
+    <div id="c1" class="answer">Está en una tienda con su amiga.</div>
+  </div>
 
-  <p>3) ¿De qué color es el sombrero que prefiere su amiga?<br><span class="jp-note">友だちが気に入っている帽子は何色ですか。</span></p>
-  <button onclick="toggleAnswer('c3')">Mostrar respuesta</button>
-  <div id="c3" class="answer">Es un sombrero azul.</div>
+  <div class="item">
+    2) ¿Qué objeto está cerca del narrador?<br>
+    <span class="jp-note">語り手の近くにある物は何ですか。</span><br>
+    <button onclick="toggleAnswer('c2')">Mostrar respuesta</button>
+    <div id="c2" class="answer">Este bolso rojo.</div>
+  </div>
 
-  <p>4) ¿Cómo es el abrigo negro del fondo?<br><span class="jp-note">奥の黒いコートはどんなコートですか。</span></p>
-  <button onclick="toggleAnswer('c4')">Mostrar respuesta</button>
-  <div id="c4" class="answer">Es muy caro, pero muy elegante.</div>
+  <div class="item">
+    3) ¿Dónde está el sombrero azul?<br>
+    <span class="jp-note">青い帽子はどこにありますか。</span><br>
+    <button onclick="toggleAnswer('c3')">Mostrar respuesta</button>
+    <div id="c3" class="answer">Está cerca de su amiga.</div>
+  </div>
 
-  <p>5) ¿A quién le parece elegante el abrigo?<br><span class="jp-note">そのコートは誰にエレガントに見えますか。</span></p>
-  <button onclick="toggleAnswer('c5')">Mostrar respuesta</button>
-  <div id="c5" class="answer">Le parece elegante al narrador y a su amiga.</div>
+  <div class="item">
+    4) ¿Dónde está la chaqueta negra?<br>
+    <span class="jp-note">黒いジャケットはどこにありますか。</span><br>
+    <button onclick="toggleAnswer('c4')">Mostrar respuesta</button>
+    <div id="c4" class="answer">Está al fondo de la tienda.</div>
+  </div>
+
+  <div class="item">
+    5) ¿Por qué no compra nada el narrador?<br>
+    <span class="jp-note">なぜ何も買いませんか。</span><br>
+    <button onclick="toggleAnswer('c5')">Mostrar respuesta</button>
+    <div id="c5" class="answer">Porque no tiene dinero.</div>
+  </div>
+
 </div>
-
 <!-- 🎯 Resumen -->
 <h2>🎯 Resumen（まとめ）</h2>
 <div class="section-box">

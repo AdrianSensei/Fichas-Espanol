@@ -236,106 +236,77 @@ el.style.display = current === "none" ? "block" : "none";
 
   <p>Lee cada oración y decide qué tipo de información predomina.</p>
 
-  <p>1. “El protagonista llegó tarde a la estación y perdió el tren.”</p>
+  <p>1. "El protagonista llegó tarde a la estación y perdió el tren."</p>
   <ul>
     <li>a) Descripción de un lugar.</li>
     <li>b) Acción dentro de una historia.</li>
     <li>c) Opinión del narrador.</li>
   </ul>
   <button onclick="toggleAnswer('ea1')">Mostrar respuesta</button>
-  <div id="ea1" class="answer">
-    Respuesta: b) Acción dentro de una historia.<br>
-    日本語：出来事（物語の行動）が中心なので、b が正解です。
-  </div>
+  <div id="ea1" class="answer">Respuesta: b) Acción dentro de una historia.</div>
 
-  <p>2. “Las montañas eran altas y estaban cubiertas de nieve brillante.”</p>
+  <p>2. "Las montañas eran altas y estaban cubiertas de nieve brillante."</p>
   <ul>
     <li>a) Descripción del paisaje.</li>
     <li>b) Diálogo entre personajes.</li>
     <li>c) Resumen del argumento.</li>
   </ul>
   <button onclick="toggleAnswer('ea2')">Mostrar respuesta</button>
-  <div id="ea2" class="answer">
-    Respuesta: a) Descripción del paisaje.<br>
-    日本語：山の様子を描写しているので、a が正解です。
-  </div>
+  <div id="ea2" class="answer">Respuesta: a) Descripción del paisaje.</div>
 
-  <p>3. “Primero visitaron el museo y luego pasearon por el río.”</p>
+  <p>3. "Primero visitaron el museo y luego pasearon por el río."</p>
   <ul>
     <li>a) Lista de adjetivos.</li>
     <li>b) Secuencia de acciones.</li>
     <li>c) Descripción de emociones.</li>
   </ul>
   <button onclick="toggleAnswer('ea3')">Mostrar respuesta</button>
-  <div id="ea3" class="answer">
-    Respuesta: b) Secuencia de acciones.<br>
-    日本語：「まず〜それから〜」という行動の流れなので、b が正解です。
-  </div>
+  <div id="ea3" class="answer">Respuesta: b) Secuencia de acciones.</div>
 
-  <p>4. “El cuarto era pequeño, pero muy acogedor y lleno de plantas verdes.”</p>
+  <p>4. "El cuarto era pequeño, pero muy acogedor y lleno de plantas verdes."</p>
   <ul>
     <li>a) Descripción de un espacio.</li>
     <li>b) Acción rápida.</li>
     <li>c) Opinión sobre un libro.</li>
   </ul>
   <button onclick="toggleAnswer('ea4')">Mostrar respuesta</button>
-  <div id="ea4" class="answer">
-    Respuesta: a) Descripción de un espacio.<br>
-    日本語：部屋の様子を説明しているので、a が正解です。
-  </div>
+  <div id="ea4" class="answer">Respuesta: a) Descripción de un espacio.</div>
 
-  <p>5. “Al final del día, decidieron quedarse una noche más en el hotel.”</p>
+  <p>5. "Al final del día, decidieron quedarse una noche más en el hotel."</p>
   <ul>
     <li>a) Descripción del hotel.</li>
     <li>b) Acción que cierra la historia.</li>
     <li>c) Definición de un concepto.</li>
   </ul>
   <button onclick="toggleAnswer('ea5')">Mostrar respuesta</button>
-  <div id="ea5" class="answer">
-    Respuesta: b) Acción que cierra la historia.<br>
-    日本語：物語の終わりの行動なので、b が正解です。
-  </div>
+  <div id="ea5" class="answer">Respuesta: b) Acción que cierra la historia.</div>
 
-  <h3>Ejercicio B – Completa la oración（物語＋描写を意識して文を作りましょう）</h3>
+  <h3>Ejercicio B – ¿Narración o descripción?（物語か描写かを判断しましょう）</h3>
   <p class="example-jp">
-    物語の一部（出来事）か、描写（様子）になるように、自然な表現を入れて完成させましょう。
+    各文を読んで、「物語文（narración）」か「描写文（descripción）」かを答えましょう。
   </p>
 
-  <p>1. Cuando llegamos al pueblo, ______________________________.</p>
+  <p>1. "De repente, empezó a llover y todos corrieron hacia el portal."</p>
   <button onclick="toggleAnswer('eb1')">Mostrar respuesta</button>
-  <div id="eb1" class="answer">
-    Ejemplo: Cuando llegamos al pueblo, <strong>las calles estaban vacías y hacía mucho frío</strong>.<br>
-    日本語例：村に着いたとき、通りには誰もおらず、とても寒かったです。
-  </div>
+  <div id="eb1" class="answer">Narración — cuenta una acción que ocurre de repente.</div>
 
-  <p>2. La plaza principal era ______________________________.</p>
+  <p>2. "El jardín era pequeño pero estaba lleno de flores amarillas y blancas."</p>
   <button onclick="toggleAnswer('eb2')">Mostrar respuesta</button>
-  <div id="eb2" class="answer">
-    Ejemplo: La plaza principal era <strong>grande, muy luminosa y llena de terrazas</strong>.<br>
-    日本語例：中央広場は広くてとても明るく、テラス席でいっぱいでした。
-  </div>
+  <div id="eb2" class="answer">Descripción — explica cómo era el jardín.</div>
 
-  <p>3. Después de cenar, ______________________________.</p>
+  <p>3. "Después de desayunar, recogieron las maletas y salieron del hotel."</p>
   <button onclick="toggleAnswer('eb3')">Mostrar respuesta</button>
-  <div id="eb3" class="answer">
-    Ejemplo: Después de cenar, <strong>salimos a caminar y hablamos de nuestros planes</strong>.<br>
-    日本語例：夕食のあと、散歩に出て、これからの計画について話しました。
-  </div>
+  <div id="eb3" class="answer">Narración — secuencia de acciones en orden.</div>
 
-  <p>4. El cielo estaba ______________________________.</p>
+  <p>4. "La cocina era amplia, luminosa y tenía una gran ventana con vistas al mar."</p>
   <button onclick="toggleAnswer('eb4')">Mostrar respuesta</button>
-  <div id="eb4" class="answer">
-    Ejemplo: El cielo estaba <strong>cubierto de nubes rosas por la puesta de sol</strong>.<br>
-    日本語例：空は夕焼けでピンク色の雲におおわれていました。
-  </div>
+  <div id="eb4" class="answer">Descripción — muestra cómo era la cocina.</div>
 
-  <p>5. Al final de la historia, el protagonista ______________________________.</p>
+  <p>5. "Al llegar al aeropuerto, descubrieron que el vuelo se había cancelado."</p>
   <button onclick="toggleAnswer('eb5')">Mostrar respuesta</button>
-  <div id="eb5" class="answer">
-    Ejemplo: Al final de la historia, el protagonista <strong>decide empezar una nueva vida en el pueblo</strong>.<br>
-    日本語例：物語の最後で、主人公はその村で新しい生活を始めることを決めます。
-  </div>
+  <div id="eb5" class="answer">Narración — cuenta un evento que ocurre en la historia.</div>
 </div>
+
 
 <div class="section-box">
   <div class="section-title">📖 5. Texto de lectura（短い読解文）</div>
